@@ -1,0 +1,15 @@
+mkdir -p /root/install/aplications
+apt -y install iperf3
+wget http://ftp.br.debian.org/debian/pool/non-free/l/lmbench/lmbench_3.0-a9-1.3+b1_amd64.deb
+sudo dpkg -i lmbench_3.0-a9-1.3+b1_amd64.deb
+wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest_cli.py
+apt -y install nuttcp
+sudo apt -y install -t jessie-backports conky conky-all 
+sudo apt -y install conky conky-all lua5.1 curl lm-sensors lsb-release
+sudo apt -y install lua5.1 curl lm-sensors lsb-release
+sudo apt -y install hping3
+sudo apt -y install -y pkg-config dh-autoreconf ncurses-dev build-essential libssl-dev libp$
+sudo apt -y install git
+git clone https://github.com/SIPp/sipp.git
+cd sipp
+./build.sh --with-pcap --with-sctp --with-openssl
